@@ -1,2 +1,4 @@
 # (Interactive) Elixir SHell
-Set-Alias esh "C:\Program Files\Elixir\bin\iex.bat"
+function esh {
+    & "C:\Program Files\Elixir\bin\iex.bat" -S mix
+}
