@@ -22,6 +22,9 @@ function ForceShutdown {
 }
 Set-Alias -Name off -Value ForceShutdown
 
+
+################### open PS profile files in VS Code ###################
+
 function pro {
     # Build the path to System.ps1 in the same folder as your profile
     $systemFile = Join-Path (Split-Path $PROFILE) "System.ps1"
@@ -31,13 +34,20 @@ function pro {
 }
 
 function prods {
-    # Build the path to System.ps1 in the same folder as your profile
+    # Build the path to Directory_Shortcuts.ps1 in the same folder as your profile
     $systemFile = Join-Path (Split-Path $PROFILE) "Directory_Shortcuts.ps1"
 
     # Now open that file in VS Code
     code $systemFile
 }
 
+function proa {
+    # Build the path to aliases.ps1 in the same folder as your profile
+    $systemFile = Join-Path (Split-Path $PROFILE) "aliases.ps1"
+
+    # Now open that file in VS Code
+    code $systemFile
+}
 
 ################### Git Commands ###################
 
