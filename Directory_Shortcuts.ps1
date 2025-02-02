@@ -9,9 +9,10 @@ function go {
 
     # A lookup table of keyword -> path
     $paths = @{
-        # Repos / GutHub
+        # Repos / GitHub
         'repos' = "C:\Users\$env:USERNAME\repos"
         'elixir' = "C:\Users\$env:USERNAME\repos\elixir"
+        'cards' = "C:\Users\$env:USERNAME\repos\elixir\projects\cards"
         'df' = "C:\Users\$env:USERNAME\repos\windows_dotfiles"
         # System
         'desktop' = "C:\Users\$env:USERNAME\Desktop"
