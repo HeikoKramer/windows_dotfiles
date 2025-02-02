@@ -1,3 +1,6 @@
+# This function provides a quick shortcut for navigating to predefined directories.
+# You supply a keyword (e.g. "repos"), and the function looks up the path,
+# moves you there, then lists the folder contents.
 function go {
     param(
         [Parameter(Mandatory=$true)]
