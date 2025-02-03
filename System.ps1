@@ -22,6 +22,15 @@ function ForceShutdown {
 }
 Set-Alias -Name off -Value ForceShutdown
 
+# fresh -> sources PS, clears the screen, brings you back to where you were before 
+function Refresh-Profile {
+    $currentDirectory = Get-Location
+    Clear-Host
+    . $PROFILE
+    Set-Location $currentDirectory
+}
+Set-Alias fresh Refresh-Profile
+
 
 ################### open PS profile files in VS Code ###################
 
