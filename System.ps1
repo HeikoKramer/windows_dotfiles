@@ -32,6 +32,22 @@ function Refresh-Profile {
 Set-Alias fresh Refresh-Profile
 
 
+function Open-with-Edge {
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory=$true)]
+        [string]$FileName
+    )
+
+    # Expand any relative paths to a full file path
+    $resolved = Resolve-Path $FileName -ErrorAction Stop
+
+    # Pass the resolved path to Edge
+    Start-Process msedge.exe $resolved
+}
+Set-Alias -Name edge -Value Open-with-Edge
+
+
 ################### open PS profile files in VS Code ###################
 
 function pro {
