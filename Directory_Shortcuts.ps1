@@ -12,8 +12,11 @@ function go {
         # Repos / GitHub
         'repos' = "C:\Users\$env:USERNAME\repos"
         'elixir' = "C:\Users\$env:USERNAME\repos\elixir"
+        'epro' = "C:\Users\$env:USERNAME\repos\elixir\projects\"
         'cards' = "C:\Users\$env:USERNAME\repos\elixir\projects\cards"
-        'df' = "C:\Users\$env:USERNAME\repos\windows_dotfiles"
+        'idcon' = "C:\Users\$env:USERNAME\repos\elixir\projects\identicon"
+        'dot' = "C:\Users\$env:USERNAME\repos\windows_dotfiles"
+        
         # System
         'desktop' = "C:\Users\$env:USERNAME\Desktop"
         'docs'    = "C:\Users\$env:USERNAME\Documents"
