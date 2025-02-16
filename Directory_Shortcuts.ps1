@@ -20,6 +20,7 @@ function go {
         # System
         'desktop' = "C:\Users\$env:USERNAME\Desktop"
         'docs'    = "C:\Users\$env:USERNAME\Documents"
+        'down'    = "C:\Users\$env:USERNAME\Downloads"
         
     }
 
